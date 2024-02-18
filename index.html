@@ -72,7 +72,7 @@
           <div class="">
             <h1 class="mb-5 text-white text-5xl font-bold">End-to-End Travel With <br> <span class="text-[#1DD100] ">P Paribahan</span></h1>
             <p class="mb-5">Embark on Unforgettable Adventures with P-Ticket. Explore the World's Wonders and Create Timeless Memories.</p>
-            <button class="btn bg-[#1DD100] outline-none border-none font-bold text-black">Buy Tickets </button>
+            <button onclick="scrollToNewElement()" class="btn bg-[#1DD100] outline-none border-none font-bold text-black">Buy Tickets </button>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
 
 
         <!--! Ticket Booking Section  -->
-        <section class="font-raleway rounded-3xl border-2 border-[#1DD100] mt-16 pb-16 bg-[#F7F8F8] max-w-screen-xl mx-auto px-2 md:px-12 lg:px-16 min-h-screen">
+        <section id="ticket-booking-section" class="font-raleway rounded-3xl border-2 border-[#1DD100] mt-16 pb-16 bg-[#F7F8F8] max-w-screen-xl mx-auto px-2 md:px-12 lg:px-16 min-h-screen">
             <h1 class="text-3xl font-bold text-center mt-12">P.H Paribahan</h1>
             <p class="text-center mt-2">Experience Effortless Travel Planning with P-Ticket's Secure Ticket Booking System. </p>
 
@@ -140,7 +140,7 @@
                         </div>
     
                         <div class="mt-10 lg:mt-0">
-                            <button class="btn btn-outline bg-[#1DD10026] font-bold border-none text-[#1DD100]"><img class="" src="images/seat-green.png" alt="">40 Seats Left</button>
+                            <button class="btn btn-outline bg-[#1DD10026] font-bold border-none text-[#1DD100]"><img class="" src="images/seat-green.png" alt=""><span id="seats-count">8</span> Seats Left</button>
                         </div>
     
                        
@@ -183,7 +183,7 @@
 
             
         <!--! Seat Section  -->
-        <div class="font-raleway bg-[#FFFFFF] mt-8 p-8 rounded-xl flex items-center ">
+        <div class="font-raleway bg-[#FFFFFF] mt-8 p-8 rounded-xl flex flex-col lg:flex-row items-center ">
           <div class="border-r-2 border-dotted flex-1 pr-8">
             <h1 class="font-bold border-b-2 border-dotted pb-2">Select your Seat</h1>
             <div class="flex justify-between border-b-2 border-dotted pb-2  items-center">
@@ -203,26 +203,26 @@
             </div>
 
         
-          <div class="flex justify-between  gap-28 items-center">
+          <div class="flex flex-col lg:flex-row justify-between  gap-28 items-center">
             <div>
               <div class="flex items-center gap-8">
-                <button class="btn px-8">A1</button>
-                <button class="btn px-8">A2</button>
+                <button id="a1" class="btn  seat px-8">A1</button>
+                <button id="a2" class="btn seat px-8">A2</button>
               </div>
               <div class="flex items-center gap-8">
-                <button class="btn mt-7 px-8">B1</button>
-                <button class="btn mt-7 px-8">B2</button>
+                <button id="b1" class="btn seat mt-7 px-8">B1</button>
+                <button id="b2" class="btn seat mt-7 px-8">B2</button>
               </div>
              </div>
   
              <div>
               <div class="flex items-center gap-8">
-                <button class="btn px-8">A3</button>
-                <button class="btn px-8">A4</button>
+                <button id="a3" class="btn seat px-8">A3</button>
+                <button id="a4" class="btn seat px-8">A4</button>
               </div>
               <div class="flex items-center gap-8">
-                <button class="btn px-8 mt-7">B3</button>
-                <button class="btn px-8 mt-7">B4</button>
+                <button id="b3" class="btn seat px-8 mt-7">B3</button>
+                <button id="b4" class="btn seat px-8 mt-7">B4</button>
               </div>
              </div>
           </div>
@@ -231,7 +231,7 @@
 
 
 
-         <div class="flex- p-5">
+         <div class="lg:p-5">
            <h1 class="font-bold border-b-2 border-dotted pb-3">Select Your Seat</h1>
 
            <div class="bg-[#F7F8F8] mt-5 rounded-xl p-5">
@@ -245,36 +245,14 @@
                     <th>Price</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <!-- row 1 -->
-                  <tr>
-                    <td>Cy Ganderton</td>
-                    <td>Quality Control Specialist</td>
-                    <td>Blue</td>
-                  </tr>
-                  <!-- row 2 -->
-                  <tr>
-                    <td>Hart Hagerty</td>
-                    <td>Desktop Support Technician</td>
-                    <td>Purple</td>
-                  </tr>
-                  <!-- row 3 -->
-                  <tr>
-                    <td>Brice Swyre</td>
-                    <td>Tax Accountant</td>
-                    <td>Red</td>
-                  </tr>
-                  <tr>
-                    <td>Brice Swyre</td>
-                    <td>Tax Accountant</td>
-                    <td>Red</td>
-                  </tr>
+                <tbody id="tbody">
+                  
                 </tbody>
               </table>
             </div>
             <div class="flex items-center justify-between px-4">
               <h1 class="font-bold mt-2">Total Price</h1>
-              <p><span class="font-bold">BDT: </span>550</p>
+              <p ><span class="font-bold">BDT: </span> <span id="total">0</span></p>
             </div>
 
             <div class="mt-5 ">
