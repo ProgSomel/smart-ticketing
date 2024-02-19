@@ -75,15 +75,26 @@ for (const seat of seats) {
 document.getElementById("apply-btn").addEventListener("click", function () {
   storedInputValue = getInputFieldValue("discount-field");
   if (storedInputValue === "NEW15") {
-    const newGrandTotal = total - total * 0.15;
+
+    const discount = total*0.15;
+
+    const newGrandTotal = total - discount;
     updateElementInnerText("grand-total", newGrandTotal);
     addHiddenClassToElement("discount-field");
     addHiddenClassToElement("apply-btn");
+
+    createAndAppendNewElement('total-discount', discount);
+
+
   } else if (storedInputValue === "Couple 20") {
-    const newGrandTotal = total - total * 0.2;
+    const discount = total*0.2;
+
+    const newGrandTotal = total - discount;
     updateElementInnerText("grand-total", newGrandTotal);
     addHiddenClassToElement("discount-field");
     addHiddenClassToElement("apply-btn");
+    createAndAppendNewElement('total-discount', discount);
+
   } else {
     alert("Invalid Coupon");
   }

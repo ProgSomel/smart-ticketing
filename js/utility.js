@@ -74,3 +74,15 @@ function refreshPage() {
     location.reload();
 }
 
+function createAndAppendNewElement(elementId, discount) {
+    const parent = document.getElementById(elementId);
+    const h1 = document.createElement('h1');
+    h1.innerText = "Discount";
+    h1.classList.add('font-bold');
+    const p = document.createElement('p');
+    p.innerText = discount;
+
+    parent.appendChild(h1);
+    parent.appendChild(p);
+}
+
