@@ -84,7 +84,7 @@
         <Section class="max-w-screen-xl mx-auto px-2 md:px-12 lg:px-16">
             <h1 class="font-bold font-raleway text-3xl text-center mt-20">Best offers for you</h1>
 
-           <div class="flex flex-col lg:flex-row gap-10 mt-8">
+           <div class="flex flex-col lg:flex-row md:gap-10 mt-8">
             <div class="flex flex-col lg:flex-row">
                 <div class="rounded-l-lg lg:w-80 lg:h-40 bg-[#FFBF0F]  p-8 space-y-1">
                     <h1 class="text-3xl font-bold">15% OFF</h1>
@@ -109,7 +109,7 @@
                     <div class="bg-[#F78C9C]">
                         <img class="h-40" src="images/cupon-devider.png" alt="">
                     </div>
-                <div class="rounded-r-lg lg:w-52 pt-12 px-12 h-40 bg-[#F78C9C] shadow-xl  space-y-1">
+                <div class="rounded-r-lg lg:w-52 pt-12 px-10 h-40 bg-[#F78C9C] shadow-xl  space-y-1">
                     <h1 class="text-2xl font-bold  font-raleway">Couple 20</h1>
                     <p class="font-extralight">Coupon Code</p>
                     </div>
@@ -124,7 +124,7 @@
 
 
         <!--! Ticket Booking Section  -->
-        <section id="ticket-booking-section" class="font-raleway rounded-3xl border-2 border-[#1DD100] mt-16 pb-16 bg-[#F7F8F8] max-w-screen-xl mx-auto px-2 md:px-12 lg:px-16 min-h-screen">
+        <section id="ticket-booking-section" class="font-raleway rounded-3xl border-2 border-[#1DD100] mt-16 pb-16 bg-[#F7F8F8] max-w-screen-xl  lg:mx-auto  px-2 md:px-12 lg:px-16 min-h-screen">
             <h1 class="text-3xl font-bold text-center mt-12">P.H Paribahan</h1>
             <p class="text-center mt-2">Experience Effortless Travel Planning with P-Ticket's Secure Ticket Booking System. </p>
 
@@ -171,7 +171,7 @@
                     <img src="images/info-devider.png" alt="">
                 </div>
 
-                <div class=" bg-[#FFFFFF] text-center space-y-2 rounded-r-lg h-[400px] mt-7 lg:pr-10 px-8 lg:px-0 flex flex-col items-center justify-center ">
+                <div class=" bg-[#FFFFFF] text-center space-y-2 rounded-r-lg h-[400px]  lg:pr-10 px-8 lg:px-0 flex flex-col items-center justify-center ">
                     <div class="flex justify-center">
                         <img src="images/fare.png" alt="">
                     </div>
@@ -183,10 +183,12 @@
 
             
         <!--! Seat Section  -->
-        <div class="font-raleway bg-[#FFFFFF] mt-8 p-8 rounded-xl flex flex-col lg:flex-row items-center ">
-          <div class="border-r-2 border-dotted flex-1 pr-8">
+        <div id="seat-selection" class="font-raleway bg-[#FFFFFF] mt-8  rounded-xl flex flex-col lg:flex-row  ">
+
+          
+          <div class="border-r-2 border-dotted  md:px-16  py-5 ">
             <h1 class="font-bold border-b-2 border-dotted pb-2">Select your Seat</h1>
-            <div class="flex justify-between border-b-2 border-dotted pb-2  items-center">
+            <div class="flex justify-between border-b-2 border-dotted pb-2   items-center">
               <div class="flex  items-center gap-2 mt-2 ">
                 <img src="images/seat-gray.png" alt="">
                 <p>Available</p>
@@ -203,33 +205,175 @@
             </div>
 
         
-          <div class="flex flex-col lg:flex-row justify-between  gap-28 items-center">
-            <div>
+            <div class="flex flex-col items-center justify-center gap-4">
+              <!-- Row A -->
               <div class="flex items-center gap-8">
-                <button id="a1" class="btn  seat px-8">A1</button>
-                <button id="a2" class="btn seat px-8">A2</button>
+                <p>A</p>
+                <div class="flex md:gap-20">
+                  <div class="flex md:gap-10">
+                    <button id="a1" class="btn seat md:w-20">A1</button>
+                    <button id="a2" class="btn seat md:w-20">A2</button>
+                  </div>
+                  <div class="flex md:gap-10">
+                    <button id="a3" class="btn seat md:w-20">A3</button>
+                    <button id="a4" class="btn seat md:w-20">A4</button>
+                  </div>
+                </div>
               </div>
+            
+             
+              <!-- Row B -->
               <div class="flex items-center gap-8">
-                <button id="b1" class="btn seat mt-7 px-8">B1</button>
-                <button id="b2" class="btn seat mt-7 px-8">B2</button>
+                <p>B</p>
+                <div class="flex md:gap-20">
+                  <div class="flex md:gap-10">
+                    <button id="b1" class="btn seat md:w-20">B1</button>
+                    <button id="b2" class="btn seat md:w-20">B2</button>
+                  </div>
+                  <div class="flex md:gap-10">
+                    <button id="b3" class="btn seat md:w-20">B3</button>
+                    <button id="b4" class="btn seat md:w-20">B4</button>
+                  </div>
+                </div>
               </div>
-             </div>
-  
-             <div>
+            
+              
+              <!-- Row C -->
               <div class="flex items-center gap-8">
-                <button id="a3" class="btn seat px-8">A3</button>
-                <button id="a4" class="btn seat px-8">A4</button>
+                <p>C</p>
+                <div class="flex md:gap-20">
+                  <div class="flex md:gap-10">
+                    <button id="c1" class="btn seat md:w-20">C1</button>
+                    <button id="c2" class="btn seat md:w-20">C2</button>
+                  </div>
+                  <div class="flex md:gap-10">
+                    <button id="c3" class="btn seat md:w-20">C3</button>
+                    <button id="c4" class="btn seat md:w-20">C4</button>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-8">
-                <button id="b3" class="btn seat px-8 mt-7">B3</button>
-                <button id="b4" class="btn seat px-8 mt-7">B4</button>
-              </div>
-             </div>
-          </div>
+            
+            
+
+<!-- Row D -->
+<div class="flex items-center gap-8">
+  <p>D</p>
+  <div class="flex md:gap-20">
+    <div class="flex md:gap-10">
+      <button id="d1" class="btn seat md:w-20">D1</button>
+      <button id="d2" class="btn seat md:w-20">D2</button>
+    </div>
+    <div class="flex md:gap-10">
+      <button id="d3" class="btn seat md:w-20">D3</button>
+      <button id="d4" class="btn seat md:w-20">D4</button>
+    </div>
+  </div>
+</div>
+
+<!-- Row E -->
+<div class="flex items-center gap-8">
+  <p>E</p>
+  <div class="flex md:gap-20">
+    <div class="flex md:gap-10">
+      <button id="e1" class="btn seat md:w-20">E1</button>
+      <button id="e2" class="btn seat md:w-20">E2</button>
+    </div>
+    <div class="flex md:gap-10">
+      <button id="e3" class="btn seat md:w-20">E3</button>
+      <button id="e4" class="btn seat md:w-20">E4</button>
+    </div>
+  </div>
+</div>
+
+<!-- Row F -->
+<div class="flex items-center gap-8">
+  <p>F</p>
+  <div class="flex md:gap-20">
+    <div class="flex md:gap-10">
+      <button id="f1" class="btn seat md:w-20">F1</button>
+      <button id="f2" class="btn seat md:w-20">F2</button>
+    </div>
+    <div class="flex md:gap-10">
+      <button id="f3" class="btn seat md:w-20">F3</button>
+      <button id="f4" class="btn seat md:w-20">F4</button>
+    </div>
+  </div>
+</div>
+
+<!-- Row G -->
+<div class="flex items-center gap-8">
+  <p>G</p>
+  <div class="flex md:gap-20">
+    <div class="flex md:gap-10">
+      <button id="g1" class="btn seat md:w-20">G1</button>
+      <button id="g2" class="btn seat md:w-20">G2</button>
+    </div>
+    <div class="flex md:gap-10">
+      <button id="g3" class="btn seat md:w-20">G3</button>
+      <button id="g4" class="btn seat md:w-20">G4</button>
+    </div>
+  </div>
+</div>
+
+<!-- Row H -->
+<div class="flex items-center gap-8">
+  <p>H</p>
+  <div class="flex md:gap-20">
+    <div class="flex md:gap-10">
+      <button id="h1" class="btn seat md:w-20">H1</button>
+      <button id="h2" class="btn seat md:w-20">H2</button>
+    </div>
+    <div class="flex md:gap-10">
+      <button id="h3" class="btn seat md:w-20">H3</button>
+      <button id="h4" class="btn seat md:w-20">H4</button>
+    </div>
+  </div>
+</div>
+
+<!-- Row I -->
+<div class="flex items-center gap-8">
+  <p>I</p>
+  <div class="flex md:gap-20">
+    <div class="flex md:gap-10">
+      <button id="i1" class="btn seat md:w-20">I1</button>
+      <button id="i2" class="btn seat md:w-20">I2</button>
+    </div>
+    <div class="flex md:gap-10">
+      <button id="i3" class="btn seat md:w-20">I3</button>
+      <button id="i4" class="btn seat md:w-20">I4</button>
+    </div>
+  </div>
+</div>
+
+<!-- Row J -->
+<div class="flex items-center gap-8">
+  <p>J</p>
+  <div class="flex md:gap-20">
+    <div class="flex md:gap-10">
+      <button id="j1" class="btn seat md:w-20">J1</button>
+      <button id="j2" class="btn seat md:w-20">J2</button>
+    </div>
+    <div class="flex md:gap-10">
+      <button id="j3" class="btn seat md:w-20">J3</button>
+      <button id="j4" class="btn seat md:w-20">J4</button>
+    </div>
+  </div>
+</div>
+
+            </div>
+            
+            
+            
+            
+            
         
         </div>
 
 
+
+
+        
+        <!--! Pricing Section  -->
 
          <div class="lg:p-5">
            <h1 class="font-bold border-b-2 border-dotted pb-3">Select Your Seat</h1>

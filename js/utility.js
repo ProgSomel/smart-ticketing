@@ -1,5 +1,5 @@
 function scrollToNewElement() {
-    document.getElementById('ticket-booking-section').scrollIntoView({behavior: 'smooth'});
+    document.getElementById('seat-selection').scrollIntoView({behavior: 'smooth'});
 }
 
 function getElementInnerTextById(elementId) {
