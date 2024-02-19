@@ -34,6 +34,16 @@ function updateTable(elementId, value1, value2, value3) {
 
 }
 
+function getInputFieldValue(elementId) {
+    const inputField = document.getElementById(elementId) ;
+    const inputFieldValue = inputField.value;
+    // console.log(inputFieldValue);
+    return inputFieldValue;
+    
+}
+
+
+
 function setBackgroundColorGreen(elementId) {
     const element = document.getElementById(elementId);
     element.classList.add('bg-[#1DD100]');
@@ -42,5 +52,16 @@ function setBackgroundColorGreen(elementId) {
 function makeDisabledClassToElement(elementid) {
     const element = document.getElementById(elementid);
     element.classList.add('pointer-events-none');
+}
+
+function removeAttributeFromElement(elementid) {
+    const element = document.getElementById(elementid);
+    element.removeAttribute('disabled');
+}
+
+function addHiddenClassToElement(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden');
+
 }
 
