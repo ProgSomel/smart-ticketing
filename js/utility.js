@@ -44,6 +44,10 @@ function getInputFieldValue(elementId) {
 
 
 
+
+
+
+
 function setBackgroundColorGreen(elementId) {
     const element = document.getElementById(elementId);
     element.classList.add('bg-[#1DD100]');
@@ -63,5 +67,10 @@ function addHiddenClassToElement(elementId) {
     const element = document.getElementById(elementId);
     element.classList.add('hidden');
 
+}
+
+function refreshPage() {
+    // Reload the current page
+    location.reload();
 }
 
